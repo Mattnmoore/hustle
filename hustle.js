@@ -23,6 +23,7 @@
 		err.prototype = Object.create(extend.prototype, { constructor: { value: err } });
 		return err;
 	}
+
 	var HustleError = extend_error(window.Error, 'HustleError');
 	var HustleDBClosed = extend_error(HustleError, 'HustleDBClosed');
 	var HustleDBOpened = extend_error(HustleError, 'HustleDBOpened');
